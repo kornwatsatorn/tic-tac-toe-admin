@@ -104,15 +104,6 @@ const LoginPage = () => {
               <Button variant="primary" type="submit" className="form-control">
                 {t("button.login")}
               </Button>
-              <hr />
-              <Button
-                variant="secondary"
-                type="button"
-                className="form-control"
-                onClick={() => router.push("/register")}
-              >
-                {t("button.register")}
-              </Button>
             </Form>
           </Card.Body>
         </Card>
