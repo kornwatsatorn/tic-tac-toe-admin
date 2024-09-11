@@ -167,7 +167,7 @@ const HomePage = () => {
                     } else if (_title.endsWith("edAt")) {
                       return (
                         <td key={index}>
-                          {dayjs(_data[_title]).format("YYYY/MM/DD")}
+                          {dayjs(_data[_title]).format("YYYY/MM/DD HH:mm")}
                         </td>
                       )
                     } else {

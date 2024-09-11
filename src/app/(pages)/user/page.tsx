@@ -19,8 +19,7 @@ import dayjs from "dayjs"
 import ReactPaginate from "react-paginate"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { IUserSchema, UserSchema } from "./user"
-import { EMatchType, EQueueStatus } from "@/utils/enum"
+import { IUserSchema, UserSchema } from "./user.zod"
 
 const keyTable = [
   "#",
@@ -140,7 +139,7 @@ const HomePage = () => {
                     } else if (_title.endsWith("edAt")) {
                       return (
                         <td key={index}>
-                          {dayjs(_data[_title]).format("YYYY/MM/DD")}
+                          {dayjs(_data[_title]).format("YYYY/MM/DD HH:mm")}
                         </td>
                       )
                     } else {
