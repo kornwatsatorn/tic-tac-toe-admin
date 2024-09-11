@@ -61,6 +61,11 @@ const HomePage = () => {
     try {
       setLoading(true)
       const _value = getValues()
+      console.log(
+        "%csrc/app/(pages)/match/page.tsx:64 _value",
+        "color: #007acc;",
+        _value
+      )
       let path = `/match/list?page=${_page}&perPage=${paginate.perPage}`
       if (_value.player?.trim()) {
         path += `&playerId=${_value.player.trim()}`
@@ -128,7 +133,7 @@ const HomePage = () => {
               </Form.Select>
             </Col>
             <Col xs={6} md={3} className="mb-3 mb-md-0">
-              <Form.Select aria-label="Status">
+              <Form.Select aria-label="Status" {...register("status")}>
                 <option>All status</option>
                 {Object.values(EQueueStatus).map((_type, _index) => (
                   <option key={_index} value={_type}>
