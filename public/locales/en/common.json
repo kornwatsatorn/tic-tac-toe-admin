@@ -1,0 +1,34 @@
+{
+  "language": {
+    "th": "Thai",
+    "en": "English"
+  },
+  "button": {
+    "back": "Back",
+    "confirm": "Confirm",
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register"
+  },
+  "error": {
+    "format": "Please input field"
+  },
+  "label": {
+    "email": "Email",
+    "password": "Password",
+    "online": "Online Mode",
+    "bot": "Bot Mode",
+    "gameover": "Game Over",
+    "winner": "You win",
+    "loser": "You lose",
+    "leave": "Leave",
+    "turn": {
+      "you": "You turn",
+      "opponent": "Opponent turn"
+    },
+    "draw": "Draw",
+    "displayName": "Display Name",
+    "pleaseFill": "Please fill",
+    "username": "Username"
+  }
+}
